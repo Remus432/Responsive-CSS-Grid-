@@ -1,0 +1,29 @@
+*:focus {
+    outline: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgba($color-bg, 0.1);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 4rem;
+}
+
+a {
+    text-decoration: none;
+}

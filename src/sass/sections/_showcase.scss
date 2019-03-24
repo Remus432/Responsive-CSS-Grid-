@@ -1,0 +1,65 @@
+.show {
+    display: grid;
+    grid-template-areas: 
+        "show show show box-1"
+        "show show show box-2";
+    grid-gap: 2rem;
+
+    width: 100%;
+    margin: 4rem 0;
+    overflow: hidden;
+
+    &__container {
+        @include bgImage("../../../img/bg.jpg");
+
+        grid-area: show;
+        min-height: 600px;
+        position: relative;
+    }
+
+    &__case {
+        @include flexPos(center, flex-start);
+        
+        flex-direction: column;
+        min-height: 600px;
+        margin-left: 4rem;
+        color: $color-light;
+    }
+
+    &__heading {
+        font-size: 8rem;
+    }
+
+    &__subheading {
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+
+    &__box {
+        @include flexPos(space-around, center);
+         
+        flex-direction: column;
+        
+        background: $color-primary;
+        color: $color-secondary;
+        padding: 2rem;
+        
+        &--1 {
+            grid-area: box-1;
+        }
+
+        &--2 {
+            grid-area: box-2;
+        }
+
+        &-heading {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        &-amount {
+            font-size: 4rem;
+        }
+    }
+}

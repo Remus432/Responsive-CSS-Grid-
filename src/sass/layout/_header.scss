@@ -1,0 +1,32 @@
+.nav {
+    &__menu {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 4rem;
+    }
+
+    &__links {
+        list-style: none;
+        text-align: center;
+        font-size: 2rem;
+        
+        padding: 2rem;
+        background: rgba($color-primary, 0.2);
+        box-shadow: 0 0 5px rgba($color-dark, 0.3);
+
+        transition: 1s all ease-in;
+        cursor: pointer;
+
+        & a {
+            color: #333333;   
+        }
+
+        &:hover a {
+            color: $color-light;
+        }
+
+        &:hover {
+            background: $color-secondary;
+        }
+    }
+}

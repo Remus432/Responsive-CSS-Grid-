@@ -1,0 +1,17 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2rem;
+
+    width: 100%;
+    min-height: 300px;
+    margin-top: 3rem;
+
+    &__box {
+        
+        & img {
+            width: 100%;
+            box-shadow: 0 0 10px rgba($color-dark, 0.5);
+        }
+    }
+}

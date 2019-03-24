@@ -1,0 +1,21 @@
+.feature {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+
+    &__box {
+        @include flexPos(center, center);
+
+        flex-direction: column;
+        background: $color-primary;
+        box-shadow: 0 0 10px rgba($color-dark, 0.3);
+        min-height: 300px;
+        text-align: center;
+    }
+
+
+    &__paragraph {
+        font-size: 2rem;  
+        width: 80%;
+    }
+}

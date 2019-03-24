@@ -1,0 +1,21 @@
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+
+    padding: 5rem;
+    margin-top: 3rem;
+    box-shadow: 0 0 5px rgba($color-dark, 0.3);
+    background-color: $color-primary;
+
+    &__img {
+        @include bgImage("../../../img/bg.jpg");
+
+        min-height: 400px;
+    }
+
+    &__paragraph {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
