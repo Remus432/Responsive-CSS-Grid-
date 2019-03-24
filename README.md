@@ -9,4 +9,4 @@ Gulp was used in production for:
 
 The layout was built using CSS Grid. 
 
-***The design was inspired by Brad Traversy from Traversy Media.
+***The design was inspired by Brad Traversy from Traversy Media.***
